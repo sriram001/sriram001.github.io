@@ -27,12 +27,16 @@ th, td {
 }
 
 .inboxText {
+    color: white;
+    opacity: 0;
     padding-top: 215px;
     padding-right: 100px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0);
     transition: 0.6s;
 }
 
 .inboxText:hover {
+    opacity: 1;
     padding-right: 10px;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.63);
     transition: 0.6s;
@@ -43,7 +47,6 @@ th, td {
  height: 300px;
  border-radius: 8px;
  text-align: right;
- color: transparent;
  background-image: url(sriram02.jpg);
  background-size: 100%;
  background-position: center;
@@ -53,7 +56,6 @@ th, td {
 }
 
 .me:hover {
-    color: rgb(255, 255, 255);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.308);
     background-size: 110%;
     overflow: hidden;
