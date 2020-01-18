@@ -4,6 +4,36 @@ body {
     margin-right: auto;
 }  
 
+footer  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+
+}
+
+.foot a img {
+    height: 40px;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.foot a img:hover {
+    box-shadow: 0px 3px 10px rgba(56, 218, 223, 0.527);
+    transition: 0.6s;
+}
+
+.foot h3 {
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+
+
 .WidthMain {
     width: 450px;
     margin-top: 20px;
@@ -134,9 +164,7 @@ video {
     margin-left: 10px;
 }
 
-.foot {
-    height: 10vh;
-}
+
 
 h3::selection,
 h4::selection,
@@ -154,6 +182,11 @@ h2::selection {
 
 h1, h2, h3, h4, h5, h6, b, a {
     font-family: 'eina04-bolduploaded_file';
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 p {
@@ -273,13 +306,13 @@ ceter {
 
     .flexTop {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     .flexInfo {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-between;
     }
 
@@ -292,8 +325,6 @@ ceter {
     .content {
         width: 98%;
     }
-
-      
 
 
     .me {
