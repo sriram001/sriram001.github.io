@@ -1,25 +1,30 @@
-
-
 body {
-    /* font-family: 'eina04-bolduploaded_file',
-    sans-serif; */
-    /* height: 100vh; */
-    
-}
-
-table {
-    border-collapse: collapse;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
 }  
-
-
-th, td {
-    text-align: left;
-    /* border: 1px solid blanchedalmond; */
-}
 
 .WidthMain {
     width: 450px;
     margin-top: 20px;
+}
+
+.flexTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexFav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .basic {
@@ -60,6 +65,7 @@ th, td {
     background-size: 110%;
     overflow: hidden;
     transition: 0.6s;
+    overflow: hidden;
 }
 
 
@@ -77,20 +83,25 @@ ul {
     height: 2vh;
 }
 
+header {
+    margin: 2vh 0vh;
+
+}
+
 footer {
     height: 10vh;
 }
 
 iframe {
-    width: 430px;
-    height: 242px;
+    width: 98%;
+    height: 243px;
     border-radius: 5px;
     margin-top: 5px;
 
 }
 video {
-    width: 430px;
-    height: 242px;
+    width: 98%;
+    height: 243px;
     border-radius: 5px;
     margin-top: 5px;
     border: 0.5px solid black;
@@ -123,49 +134,9 @@ video {
     margin-left: 10px;
 }
 
-
-
-
-/* @media(max-width: 850px) {
-
-    .WidthMain {
-        width: 400px;
-    }
-    .me {
-        width: 400px;
-    }
+.foot {
+    height: 10vh;
 }
-@media(max-width: 650px) {
-
-    .WidthMain {
-        width: 280px;
-    }
-
-    .me {
-        width: 280px;
-        height: 200px;
-    }
-
-    h1 {
-        font-size: 1.4rem;
-    }
-
-    h3 {
-        font-size: 1rem;
-    }
-
-    .inboxText {
-        padding-top: 140px;
-        padding-right: 100px;
-        transition: 0.6s;
-    }
-
-    .inboxText:hover {
-        padding-right: 10px;
-        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.63);
-        transition: 0.6s;
-    }
-} */
 
 h3::selection,
 h4::selection,
@@ -181,7 +152,7 @@ h2::selection {
     background: black;
 }
 
-h1, h2, h3, h4, h5, h6, b {
+h1, h2, h3, h4, h5, h6, b, a {
     font-family: 'eina04-bolduploaded_file';
 }
 
@@ -193,12 +164,15 @@ p {
 
 .LAFA {
     margin-top: 3px;
-    padding-right: 380px;
+    width: 96%;
+    text-align: left;
+    
 }
 
 .LAFM {
     margin-top: 5px;
-    padding-right: 370px;
+    width: 96%;
+    text-align: left;
 }
 
 .sBar {
@@ -237,5 +211,115 @@ ceter {
         url('eina04-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+}
+
+@media (max-width: 850px) {
+
+    body {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flexTop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .flexInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flexFav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .flexFav .stBar {
+        display: none;
+    }
+    .RE1 {
+        display: none;
+    }
+
+.marvel {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.marvel, .apple {
+    width: 450px;
+    height: 285px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+    body {
+        width: 98%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .WidthMain {
+        width: 98vw;
+    }
+
+    .flexTop {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .flexInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .flexFav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 98%;
+    }
+
+      
+
+
+    .me {
+        width: 98%;
+        height: 240px;
+    }
+
+    .marvel {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .marvel, .apple {
+        width: 98%;
+        height: 285px;
+    }
+
+    iframe,
+    video {
+        width: 96%;
+    }
+
+    .inboxText { 
+        display: none;
+    }
+    
+    
 
 }
