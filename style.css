@@ -10,6 +10,7 @@ footer  {
 
 }
 
+
 .foot {
     display: flex;
     align-items: center;
@@ -219,11 +220,6 @@ p {
     margin-top: 20px;
 }
 
-.stBar {
-    height: 10px;
-    width: 50px;
-    color: rgb(56, 217, 223);
-}
 
 ceter {
     z-index: 1;
@@ -247,7 +243,7 @@ ceter {
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
 
     body {
         width: 500px;
