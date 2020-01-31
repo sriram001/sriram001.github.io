@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <title> flex </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="box.css">
+  </head>
+
+    <header class="head1">
+      <div class="container">
+          <div class="item0"><b>Some Company</b></div>
+          <div class="item1 item"><a href="#">Designs</a></div>
+          <div class="item2 item"><a href="#">Art</a></div>
+          <div class="item3 item"><a href="#">Code</a></div>
+          <div class="item4 item"><a href="#">About</a></div>
+      </div>
+    </header>
+    <main class="row">
+    
+   <form action="flex.html" method="post">
+     <h2>Sign Up</h2>
+   
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="user_name" placeholder="name">
+     <label for="mail">e-mail:</label>
+     <input type="email" id="mail" name="user_email" placeholder="e-mail">
+     <label for="password">password:</label>
+     <input type="password" id="password" name="user_password" placeholder="password">
+     <label for="bio">bio:</label>
+     <textarea name="user_bio" id="bio" cols="30" rows="7"></textarea>
+     
+     <label for="job">job role:</label>
+     <select name="user_job" id="job">
+       <optgroup label="dev">
+       <option value="frontend_developer">Front-End-Developer</option>
+       <option value="PHP_developer">PHP-developer</option>
+       <option value="Phython_developer">Phython-developer</option>
+      </optgroup>
+      <optgroup label="designer">
+       <option value="design">design</option>
+      </optgroup>
+     </select>
+
+    <!-- <label>type</label>
+    <input type="checkbox" id="white" value="white" name="user_color"> <label for="white">white</label>
+    <input type="checkbox" id="black" value="black" name="user_color"> <label for="white">black</label> -->
+
+
+     <button type="submit">Sign Up</button>
+
+   </form>
+
+  </main>
+  <!-- <footer>
+    <a href="#">Top</a>
+  </footer> -->
+  </body>
+</html>
