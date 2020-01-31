@@ -4,11 +4,12 @@ body {
     margin-right: auto;
 }  
 
-footer  {
-    margin-top: 30px;
-    margin-bottom: 30px;
-
+.contactME {
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
+
+
 
 
 .foot {
@@ -54,6 +55,7 @@ footer  {
 
 .flexFav {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -128,13 +130,6 @@ iframe {
     height: 243px;
     border-radius: 5px;
     margin-top: 5px;
-
-}
-video {
-    width: 98%;
-    height: 243px;
-    border-radius: 5px;
-    margin-top: 5px;
     border: 0.5px solid black;
 
 }
@@ -147,6 +142,7 @@ video {
     flex-wrap: wrap;
     border-radius: 5px;
     justify-content: center;
+    margin-top: 20px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.13);
     transition: 0.6s;
 }
@@ -154,15 +150,6 @@ video {
 .marvel:hover {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.13);
     transition: 0.6s;
-}
-
-.apple:hover {
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.13);
-    transition: 0.6s;
-}
-
-.marvel {
-    margin-left: 10px;
 }
 
 
