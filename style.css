@@ -9,9 +9,6 @@ body {
     margin-bottom: 15px;
 }
 
-
-
-
 .foot {
     display: flex;
     align-items: center;
@@ -333,7 +330,31 @@ ceter {
     .inboxText { 
         display: none;
     }
-    
-    
 
+}
+
+
+/* keyframes */
+
+@keyframes yourAnimation {
+    0% {
+        transform: rotate(0) translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+.elementToAnimate {
+    animation: yourAnimation 1s forwards 0s ease-out;
+}
+
+.elementToAnimate1 {
+    animation: yourAnimation 1.3s forwards 0s ease-out;
+}
+.elementToAnimate2 {
+    animation: yourAnimation 1.5s forwards 0s ease-out;
 }
