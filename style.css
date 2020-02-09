@@ -4,6 +4,7 @@ body {
     margin-right: auto;
 }  
 
+
 .contactME {
     margin-top: 40px;
     margin-bottom: 15px;
@@ -197,6 +198,7 @@ p {
     height: 10px;
     width: 50px;
     background-color: rgb(56, 217, 223);
+    animation: yourAnimation1 1.2s forwards 0s ease-in-out;
 }
 
 .basic .sBar {
@@ -204,9 +206,14 @@ p {
     margin-top: 20px;
 }
 
+.stBar {
+    margin-top: -8px;
+    margin-bottom: 30px;
+    height: 5px;
+    width: 100px;
+    background-color: rgb(56, 217, 223);
+    animation: yourAnimation2 1s forwards 0s ease-out;
 
-ceter {
-    z-index: 1;
 }
 
 @font-face {
@@ -253,9 +260,6 @@ ceter {
         justify-content: space-between;
     }
 
-    .flexFav .stBar {
-        display: none;
-    }
     .RE1 {
         display: none;
     }
@@ -357,4 +361,32 @@ ceter {
 }
 .elementToAnimate2 {
     animation: yourAnimation 1.5s forwards 0s ease-out;
+}
+
+@keyframes yourAnimation1 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50px;
+    }
+}
+
+@keyframes yourAnimation2 {
+    0% {
+        width: 0px;
+        opacity: 1;
+        height: 50px;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+     100% {
+         width: 100%; 
+         opacity: 0;
+         height: 0px;
+     }
 }
