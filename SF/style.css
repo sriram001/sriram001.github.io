@@ -1,142 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0px;
-    color: white;
-    height: 100vh;
-    background-image: url(back.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0%;
-    background-color: lightcyan;
+    font-family: 'Roboto Mono', sans-serif;
 }
-
 a {
-    text-decoration: none;
+    text-decoration: none; 
+    color: black; 
+    font-weight: 700;
+    display: inline-block;
+}
+span {
+    color: coral;
+    font-weight: bolder;
 }
 
-nav {
-    margin: 0px;
-    height: 60px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
+.dev, h1 {
+    animation: yourAnimation1 1.3s forwards 0s ease-in-out;
 }
 
-.navT {
-      display: flex;
-      align-items: center;
-      /* justify-content: space-between; */
-      justify-content: center;
-      padding-top: 30px;
-}
-.rightNav {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-}
-
-.rightNav div {
-    margin-left: 10px;
-}
-
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 45px;
-    
-}
-
-.logo p {
-    
-    font-size: 1.3rem;
-    padding-left: 10px;
-}
-
-
-.download {
-    padding: 0px 30px;
-    background-color: hsl(157, 100%, 40%);
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.download:hover {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.199);
-    transition: 0.3s;
-}
-
-.download p {
-    color: rgb(255, 255, 255);
-}
-
-main {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.heroImage {
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- width: 800px;
-}
-
-
-.heroImage img {
+p {color: gray;}
+.container1 {
     width: 100%;
-    border-radius: 3px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.288);
+    height: 100vh;
+    display: flex;
 }
 
-.heroText {
+.box1 {
+    width: 50%;
+    /* background-color: rgb(241, 241, 241); */
+    /* border: 2px solid black; */
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* animation: yourAnimation1 1s forwards 0s ease-in-out; */
+}
+.appInfo {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    animation: yourAnimation1 1.5s forwards 0s ease-in-out;
+}
+.appIcon {
+    height: 55px;
+    margin-right: 20px;
+}
+.appIcon img {
+    height: 100%;
+    border-radius: 10px;
+}
+.downLoad {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    animation: yourAnimation2 1.3s forwards 0s ease-in-out;
+
+}
+.downLoad img {
+    height: 45px;
+}
+
+.box2 {
+    width: 50%;
+    /* background-color: rgb(255, 255, 255); */
+    /* border: 2px solid black; */
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-image: url(back.svg);
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* animation: yourAnimation2 1s forwards 0s ease-in-out; */
+}
+
+.nav {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    line-height: 24px;
+    justify-content: flex-end;
+    animation: yourAnimation2 1s forwards 0s ease-in-out;
+}
+.navSide {
+    margin-right: 10px;
 }
 
-main .rightNav {
-    margin: 10px;
+.navSide a { 
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.4s;
 }
 
-footer {
-    height: 5vh;
+.navSide a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.205);
+    transition: 0.4s;
 }
 
-p {
-    text-align: center;
+.mainImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    animation: yourAnimation2 1.5s forwards 0s ease-in-out;
 }
 
-@media (max-width: 768px) {
-.heroImage {
-    width: 600px;
-}
+/* .mainImage img{ 
+    width: 85%;
+} */
+
+.social {
+    display: flex;
+    margin-top: 20px;
+    animation: yourAnimation1 1.3s forwards 0s ease-in-out;
 }
 
-@media (max-width: 500px) {
-    .heroImage {
-        width: 375px;
+.social a {
+    text-decoration: underline;
+    padding: 5px;
+    background-color: white;
+}
+
+.carousel-item {
+    animation: yourAnimation 0.5s forwards 4.5s ease-in-out;
+}
+
+@keyframes yourAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
     }
 
-    .rightNav div {
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes yourAnimation1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes yourAnimation2 {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .container1 {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .box1, .box2 {
+        width: 100%;
+    }
+    .box2 {
+        height: 140vh;
+    }
+    .box1 {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .nav {
+        justify-content: space-around;
+    }
+    .navSide a {
         margin-left: 0px;
-        width: 150%;
+    }
+    
+}
+
+@media (max-width: 450px) { 
+    .container1 {
+        flex-direction: column;
+    }
+    .box2, .box1 {
+        padding: 20px;
+    }
+    .box1 {
+        flex-direction: column;
+        height: 80vh;
+    }
+    .box2 {
+        flex-direction: column-reverse;
+    }
+    .downLoad {
+        flex-direction: column;
+    }
+    .downLoad img {
+        max-width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .navSide {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 15px;
+    }
+    .navSide a {
+        width: 97%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 350px) {
-    .heroImage {
-        width: 300px;
-    }
-}
+
+
+
+
 
