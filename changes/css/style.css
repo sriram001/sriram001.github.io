@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo1, .logo2, .title1 {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {margin: 0;}
+
+.logo1, .logo2 {
+    width: 70px;
+    background-color: white;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo1 img {
+    width: 100%;
+}
+
+.logo2 img {
+    height: 100%;
+}
+
+
+.navAll {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+
+.navMenu {
+    display: none;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: calc(100% - 140px); */
+    width: 100%;
+}
+
+.NavCollapse {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: calc(100% - 140px);
+}
+
+
+.SiteTitle {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav2 a {
+    transition: 0.5s;
+    height: 60px;
+    background-color: rgb(240, 240, 240);
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    width: 14%;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav2 a:hover {
+    text-decoration: none;
+    transition: 0.5s;
+    color: rgb(0, 123, 255);
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0px 0px 7px rgba(0, 123, 255, 0.425);
+}
+
+.main1 {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 65vh;
+    width: 1300px;
+}
+
+.mainLeft {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mainText {
+    height: 50%;
+}
+.mainImages {
+    height: 40%;
+    margin-bottom: 10%;
+}
+
+.carousel-item {
+    height: 280px;
+    overflow: hidden;
+}
+/* 
+.carousel-item img {
+    
+} */
+
+p {
+    font-size: 1rem;
+
+}
+
+.mainRight {
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.news {
+    height: 100%;
+    padding-right: 10px;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #EFEFF0;
+    height: 22vh;
+    display: flex;
+    align-items: center;
+}
+
+.footerMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer h3 {
+    font-size: 24px;
+    color: #007BFF;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #007BFF;
+}
+.footer b {
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+
+/* 
+
+
+Responsive 
+
+
+ */
+
+@media (max-width:1300px) {
+    .main1 {
+        width: 98%;
+    }
+    p {font-size: 0.9rem;}
+}
+
+
+
+@media (max-width:800px) {
+
+    .SiteTitle {
+        height: 60px;
+    }
+
+    .SiteTitle h3 {
+        font-size: 18px;
+    }
+
+    .nav2 a{
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        border: 3px solid white;
+        font-size: 0.9rem;
+    }
+
+    .mainImages {
+        height: 60%;
+    }
+
+    .main1 {
+        margin-top: 0px;
+        height: 130vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mainLeft {
+        height: 60vh;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .carousel-item {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .mainRight {
+        width: 100%;
+        height: 50vh;
+    }
+
+
+    .footer {
+        min-height: 38vh;
+    }
+    .footerMain {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:600px) {
+
+
+    .navMenu {
+        margin-top: 10px;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 95%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #EEEFEF;
+        background-color: #397CF3;
+        transition: 0.4s;
+    }
+
+    .nav2 {
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .nav2 a {
+        width: 98%;
+        height: 50px;
+        margin: 10px auto;
+         border: none;
+         font-size: 1rem;
+    }
+
+    .main1 {
+        height: 120vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .carousel-item {
+        height: 30vh;
+    }
+
+    .mainLeft {
+        width: 100%;
+    }
+
+    .mainRight {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .footer {
+        min-height: 38vh;
+    }
+
+    .footerMain {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+
+   .research {
+      height: 221px;
+      width: 350px;
+      border-style: solid;
+      border: 2px;
+   }
+   p{
+      text-align: justify;
+      padding-right: 20px;
+   }
+</style>
+<meta charset="utf-8">
+<title>Research</title>
+<link rel = "icon" href = "logo.png" type = "image/x-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Research Lab, PES University">
+<meta name="author" content="">
+<!-- Le styles -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="NavMenuDown.js"></script>
+<link href="css/theme.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   <div class="container-none">
+
+       <div class="navAll">
+          <div class="SiteTitle">
+             <h3>Parallel Systems Research Lab (PSRL)</h3>
+          </div>
+          <div class="nav1">
+             <div class="logo1"><img src="logo.png" alt="logo"></div>
+
+             <div class="NavCollapse">
+
+                <div class="navMenu">
+                   Menu
+                </div>
+
+                <div class="nav2">
+                   <a href="index.html">
+                      <div class="navItem">Home
+                      </div>
+                   </a>
+                   <a href="people.html">
+                      <div class="navItem">People
+                      </div>
+                   </a>
+                   <a href="teaching.html">
+                      <div class="navItem">Teaching</div>
+                   </a>
+                   <a href="research.html">
+                      <div class="navItem">Research</div>
+                   </a>
+                   <a href="resources.html">
+                      <div class="navItem">Resources</div>
+                   </a>
+                   <a href="contact.html">
+                      <div class="navItem">Contact</div>
+                   </a>
+                </div>
+             </div>
+
+             <div class="logo2"><img src="thumbs/generic-logo.JPG" alt="logo"></div>
+          </div>
+
+       </div>
+
+      <div class="row-fluid">
+         <div class="span3 bs-docs-sidebar" id="navparent">
+            <ul class="nav nav-list bs-docs-sidenav" data-offset-top="200" data-offset-bottom="300">
+             <li><a href="#projects">Final Year Projects</a></li>
+             <li><a class="subhead" href="#PPA"> Privacy Preserving Analytics</a></li>
+             <li><a class="subhead" href="#ABR"> Automatic Bug Repair </a></li>
+             <li><a class="subhead" href="#CBD">Concurrency Bug Detection</a></li>
+             <li><a class="subhead" href="#PFBD">Programming Frameworks for Heterogeneous Computing</a></li>
+             <li><a class="subhead" href="#PBD">Performance Bug Detection</a></li>
+
+             <li><a href="#miniprojects">Pre-Final Year Projects</a></li>
+             <li><a class="subhead" href="#PLAG">Plagiarism Detector</a></li>
+             <li><a class="subhead" href="#MBD">Memory Bug Detection</a></li>
+             <li><a class="subhead" href="#BLK">Identifying Web Site Cripplers</a></li>
+             <li><a class="subhead" href="#VAA">Video Analytics Application</a></li>
+             <li><a class="subhead" href="#PGA">Parallel Graph Analytics</a></li>
+             <li><a class="subhead" href="#MDP">Mechanism Design for Privacy</a></li>
+             <li><a class="subhead" href="#PPTHCS">Programmability Performance Tradeoffs for HCS</a></li>
+
+             <li><a href="#publications"> Publications</a></li>
+             <li><a class="subhead" href="#pat"> Patents</a></li>
+             <li><a class="subhead" href="#jour"> Journals</a></li>		
+             <li><a class="subhead" href="#conc"> Conferences</a></li>
+             <li><a class="subhead" href="#w/p"> Workshops/Posters </a></li>
+          </ul>
+       </div>
+       <div class="span8 offset1">         
+         <div class="row-fluid">
+            <div class="span12">
+             <div>                
+               <section id="projects">
+                  <div class="page-header">
+                     <h3>Final Year Projects</h3>
+                  </div>
+
+                  <section id="PPA">
+                     <div class="row-fluid">
+                        <div class="span3" style="border: solid;">
+                           <a href="" >
+                              <img class="research" src="images/privacy.jpg" class="float-right" alt="privacy"/>
+                           </a>
+                        </div>
+                        <div class="span9">
+                           <h4>
+                              <a href="projects/ppa/ppa.html"> 
+                              Privacy Preserving Analytics</a></h4>
+                              <p>
+                                 As organizations increasingly collect sensitive information about individuals, these organizations are ethically and legally obligated to safeguard against privacy leaks. We also need to allow some collaborative analysis along with preserving privacy. Our project intends to solve this tradeoff without modifying the databases, thereby making it database independent.
+                              </p>
+                              <p>
+                                Our approach must support heterogeneous database environments by not requiring a specific database distribution or replacement of the database with a custom runtime. We mainly target five standard SQL aggregation functions: Count, Sum, Average, Max, and Min, which represent 99% of aggregation functions used in real-world queries.<br><a href="projects/ppa/ppa.html" style="color: teal;"> Read More</a>
+                             </p>
+                          </div>
+                       </div>
+                    </section>
+
+                    <hr>
+
+                    <section id="ABR">
+
+                     <div class="row-fluid">
+                        <div class="span3" style="border: solid;">
+                           <a href="" >
+                              <img class="research" src="images/bug_repair.jpg" class="float-right" alt="bug_repair"/>
+                           </a>
+                        </div>
+                        <div class="span9">
+                           <h4>
+                              <a href="projects/automatic_bug_repair/automatic_bug_repair.html">
+                                 Automatic Bug Repair 
+                              </a>
+                           </h4>
+                           <p>
+                              MOOCs offer large scale programming education, through introductory courses. Evaluating students assignments and providing them with helpful feedback is a laborious task. Automating the process of providing feedback to students would help make MOOCs scalable. This would mean correcting incorrect student submissions and converting that correction into a natural language format.
+                           </p>
+                           <p>
+                              Many tools exist to make corrections to incorrect programs. But, none of them provide good feedback to the student about their conceptual misunderstandings. The student must make do with a message similar to a compiler error message. This is an area that we find is seriously lacking and would like to address through our project of automatic bug repair and feedback.<br><a href="projects/automatic_bug_repair/automatic_bug_repair.html" style="color: teal;"> Read More</a>
+                           </p>
+                        </div>
+                     </div>
+                  </section>
+
+                  <hr>
+
+                  <section id="CBD">
+
+                   <div class="row-fluid">
+                      <div class="span3" style="border: solid;">
+                         <a href="" >
+                           <img class="research" src="images/multithreading.jpg" class="float-right" alt="multithreading"/>
+                        </a>
+                     </div>
+                     <div class="span9">
+                      <h4>
+                         <a href="projects/concurrency_bug_detection/concurrency_bug_detection.html"> 
+                           Concurrency Bug Detection
+                        </a>
+                     </h4>
+                     <p>
+                        Breaking down programs into tasks is a common practice while programming. A project may contain a large number of tasks that have to be run. These tasks if run serially may not be able to perform up to their full potential. Hence, parallel execution of tasks has become an approach many programmers have adopted to speedup programs and achieve greater results.
+                     </p>
+
+                     <p>
+                        Parallelizing code could lead to a large number of timing problems while sharing data and accessing resources. In this project, we explore different types of concurrency bugs and propose an efficient concurrency bug detector to improve performance of code and to speed up the bug detection process.<br><a href="projects/concurrency_bug_detection/concurrency_bug_detection.html" style="color: teal;"> Read More</a>
+                     </p>
+                  </div>
+               </div>
+            </section>
+
+
+            <hr>
+
+            <section id="PFBD">
+
+              <div class="row-fluid">
+                 <div class="span3" style="border: solid;">
+                    <a href="" >
+                     <img class="research" src="images/cuda_opencl.jpg" class="float-right" alt="cuda_opencl"/>
+                  </a>
+               </div>
+               <div class="span9">
+                 <h4>
+                    <a href="projects/heterogeneity/heterogeneity.html"> 
+                     Programming Frameworks for Heterogeneous Computing
+                  </a>
+               </h4>
+               <p>
+                  As there is high demand for GPGPUs in market, so its framework.
+                  CUDA which is proprietary to Nvidia runs better on its own platform.
+                  And on the other hand OpenCL is a heterogenous framework which runs over all types of platform CPUs,GPUs,FPGAs,Accelerators.
+                  There are developers or vendors who want to translate code from CUDA to OpenCL to develop CUDA code in OpenCL or who want to check their code in different platforms.
+               </p>
+               <p>
+                  CU2CL reduces the time and cost of manual translation of code.
+                  The main aim of project is to analyse the efficiency of existing CU2CL. <br><a href="projects/heterogeneity/heterogeneity.html" style="color: teal;"> Read More</a>
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <hr>
+
+
+      <section id="PBD">
+
+         <div class="row-fluid">
+            <div class="span3" style="border: solid;">
+               <a href="" >
+                  <img class="research" src="images/performance.png" class="float-right" alt="performance"/>
+               </a>
+            </div>
+            <div class="span9">
+               <h4>
+                  <a href="perform_bug_detect.html"> 
+                     Performance Bug Detection 
+                  </a>
+               </h4>
+               <p>
+                  Organizations spend around 50-70% of the SDLC in testing, but the focus is on functionality testing. There's another vertical called performance bugs which deals with bugs leading to time/ space issues. Some performance bugs also lead to functionality bugs. The project intends to highlight the importance of performance bugs and help auto detect these in C++ programs/ libraries. <br><a href="projects/performance/projects.html" style="color: teal;"> Read More</a>
+               </p>
+            </div>
+         </div>
+      </section>
+
+   </section>
+
+   <section id="miniprojects">
+      <div class="page-header">
+         <h3>Pre-Final Year Projects</h3>
+      </div>
+      <section id="PLAG">
+         <div class="row-fluid">
+            <div class="span3" style="border: solid;">
+               <a href="" >
+                  <img class="research" src="images/plagiarism.png" class="float-right" alt="plagiarism"/>
+               </a>
+            </div>
+            <div class="span9">
+               <h4>
+                  <a href="projects/appropriation/appropriation.html">Plagiarism Detector</a>
+               </h4>
+               <p>With the rise of the internet, we can obtain information with just a few clicks. This easy access to content has led to a rise in cases of plagiarism in the fields of research and education. </p>
+               <p>This project works on developing novel plagiarism detection methods using to overcome the shortcomings of the current state of the art plagiarism detectors. <br> <a href="projects/appropriation/appropriation.html" style="color: teal;"> Read More</a></p>
+            </div>
+         </div>
+
+      </section>
+      <hr>
+
+      <section id="MBD">   
+
+        <div class="row-fluid">
+         <div class="span3" style="border: solid;">
+            <a href="" >
+               <img class="research" src="images/memory_leak.png" class="float-right" alt="memory_leak"/>
+            </a>
+         </div>
+         <div class="span9">
+            <h4>
+               <a href="projects/memory_bug_detection/memory_bug_detection.html">Memory Bug Detection</a>
+            </h4>
+            <p>Memory leaks are particularly serious issues for programs like daemons and servers which by definition never terminate. BLeak (Browser Leak debugger), developed by John Vilk and Emery Berger,is the first system for automatically debugging memory leaks in web applications. 
+            </p>
+            <p>Based on the inspiration from this tool we intend to find other critical sources for memory leaks and correct them.</p>  <a href="projects/memory_bug_detection/memory_bug_detection.html" style="color: teal;"> Read More</a></p>
+         </div>
+      </div>
+
+
+   </section>
+
+   <hr>
+   <section id="BLK"> 
+      <div class="row-fluid">
+         <div class="span3" style="border: solid;">
+            <a href="" >
+               <img class="research" src="images/website.png" class="float-right" alt="website"/>
+            </a>
+         </div>
+         <div class="span9">
+            <h4>
+               <a href="projects/identifying_web_site_cripplers/identifying_web_site_cripplers.html">Identifying Web Site Cripplers</a>
+            </h4>
+            <p>Memory leaks are particularly serious issues for programs like daemons and servers which by definition never terminate. BLeak (Browser Leak debugger), developed by John Vilk and Emery Berger,is the first system for automatically debugging memory leaks in web applications.</p>
+            <p>Our team is working on improving the performance of BLeak to detect even tougher memory leaks in web apps.</p><br> <a href="projects/identifying_web_site_cripplers/identifying_web_site_cripplers.html" style="color: teal;"> Read More</a></p>
+         </div>
+      </div>
+
+   </section>
+
+   <hr>
+   <section id="VAA"> 
+
+      <div class="row-fluid">
+         <div class="span3" style="border: solid;">
+            <a href="" >
+               <img class="research" src="images/video_analytics.png" class="float-right" alt="video analytics"/>
+            </a>
+         </div>
+         <div class="span9">
+            <h4>
+               <a href="projects/automatic_attendance/automatic_attendance.html">Video Analytics Application</a> </h4>
+               <p>Universities, nowadays, have large classrooms and a high student to teacher ratio. Keeping track of attendance and other student activities within classroom is a hassle that many lecturers are keen to avoid.
+               </p>
+               <p>This project aims to develop an automated non-binary attendance system based on video analytics.</p><br> <a href="projects/automatic_attendance/automatic_attendance.html" style="color: teal;"> Read More</a></p>
+            </div>
+         </div>
+
+      </section>
+      <hr>
+      <section id="PGA">   
+         <div class="row-fluid">
+            <div class="span3" style="border: solid;">
+               <a href="" >
+                  <img class="research" src="images/graph_analytics.png" class="float-right" alt="graph_analytics"/>
+               </a>
+            </div>
+            <div class="span9">
+               <h4>
+                  <a href="projects/parallel_graph/parallel_graph.html">Parallel Graph Analytics</a> </h4>
+                  <p>Politics have a huge impact in today's world and can influence the beliefs and ideas of millions of individuals. The aim of this project is to provide the user with the degree of bias in a given political statement made by a person using graph analytics, topic modeling and accelerating the algorithm using OpenCL.</p><br> <a href="projects/parallel_graph/parallel_graph.html" style="color: teal;"> Read More</a></p>
+               </div>
+            </div>
+
+         </section>
+         <hr>
+         <section id="MDP"> 
+            <div class="row-fluid">
+               <div class="span3" style="border: solid;">
+                  <a href="" >
+                     <img class="research" src="images/privacy_mech.jpeg" class="float-right" alt="graph_analytics"/>
+                  </a>
+               </div>
+               <div class="span9">
+                  <h4>
+                     <a href="projects/sensitivity/sensitivity.html">Mechanism Design for Privacy</a></h4>
+                     <p>This project aims on preserving a user's privacy in all forms</p><br> <a href="projects/sensitivity/sensitivity.html" style="color: teal;"> Read More</a></p>
+                  </div>
+               </div>
+
+            </section>
+
+            <hr>
+            <section id="PPTHCS">   
+
+               <div class="row-fluid">
+                  <div class="span3" style="border: solid;">
+                     <a href="" >
+                        <img class="research" src="images/cuda_opencl.jpg" class="float-right" alt="cuda_opencl"/>
+                     </a>
+                  </div>
+                  <div class="span9">
+                     <h4>
+                        <a href="projects/cuda_opencl/cuda_opencl.html">Programmability Performance Tradeoffs for HCS</a></h4>
+                        <p>While OpenCL is user friendly and portable, CUDA is preferred for its performance. Hence, it becomes desirable to run OpenCL programs on NVIDIA’s GPU, even though it has its own performance issues on NVIDIA’s hardware. To overcome this problem, we need a tool which can convert programs written in OpenCL to CUDA, to boost its performance on NVIDIA’s GPU cards.</p><br> <a href="projects/sensitivity/sensitivity.html" style="color: teal;"> Read More</a></p>
+                     </div>
+                  </div>         
+                  
+               </section>
+            </section>
+
+
+
+
+            <section id="publications">
+               <div class="page-header">
+                  <h3>International Publications</h3>
+               </div>
+               <section id="pat">
+                  <h3>Patents</h3>
+                  <br/>
+                  <h4>Tolerating and detecting asymmetric races</h4>
+                  <br/>
+                  <p>
+                     Detecting and/or tolerating races. Races occur due to malicious threads not respecting software locks. A method of 				detecting and/or correcting races includes making local copie(s) and reference copie(s) of shared data. Any read and write operations performed by a safe thread are caused to be performed on the local copie(s) during a critical section. The critical section defines a time frame which a variable lock is placed on shared data. Any read and write operations performed by malicious threads are allowed to be performed on the shared data during the critical section. The shared data, the local copie(s), and the reference copie(s) are compared to determine that a race has been detected. An indication can be output that a race has occurred or the race can be corrected.<a href="https://patentimages.storage.googleapis.com/5b/98/ef/038ab58bf37792/US7971248.pdf" style="color: teal;"> Read More</a>
+                  </p><br/>
+                  <h4>Method and system for maintaining vector clocks during synchronization for data race detection</h4><br/>
+                  <p>Method and system for maintaining vector clocks during synchronization for data race detection. Embodiments herein disclose methods to reduce overheads of maintaining and updating vector clock during synchronization in vector based dynamic data race detection systems. Embodiments herein enable improvement of vector based dynamic data race detection systems orthogonally without compromising with precision of the system by using opportunistic methods to reduce overheads during synchronization of threads.<a href="https://patentimages.storage.googleapis.com/75/13/e9/9447c78172e8ee/WO2012124995A2.pdf "style="color: teal;"> Read More</a>
+                     <br/>
+                  </p>
+               </section>
+               <section id="jour">
+                  <h3>Journals</h3>
+                  <ul style="text-align: justify;padding-right: 20px;">
+                     <li><a href = "https://scholar.google.com/scholar_url?url=http://eprints.iisc.ernet.in/15453/1/Pragmatic_integrated.pdf&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=5578867261707539416&ei=PZBTXtikApntygS62aAw&scisig=AAGBfm2xSQasPUlD1Y6h4owvBg1wjINV7w">Nagpal, Rahul, and Y. N. Srikant. "Pragmatic integrated scheduling for clustered VLIW architectures." Software: Practice and Experience 38.3 (2008): 227-257.</a></li>
+                     <li><a href = "https://scholar.google.com/scholar_url?url=https://drona.csa.iisc.ac.in/~srikant/papers-theses/PARCO.pdf&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=1644877260400152946&ei=pJBTXpieNt30ygTijI-YAw&scisig=AAGBfm2FAtdPYV9ug-yuXtD7OJpSAI7O_Q">Nagpal, Rahul, and Y. N. Srikant. "Compiler-assisted power optimization for clustered VLIW architectures." Parallel Computing 37.1 (2011): 42-59.</a></li>
+                     <li><a href = "https://scholar.google.com/scholar_url?url=https://ecommons.cornell.edu/bitstream/handle/1813/14880/Ratanaworabhan,%2520Paruj.pdf%3Fsequence%3D1&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=10300060730887739453&ei=MpFTXpPzD4KiywT7v6f4Bg&scisig=AAGBfm2Q0nBGtMslQuVfQ_CXiUcOtUrxyg">Ratanaworabhan, P., Burtscher, M., Kirovski, D., Zorn, B., Nagpal, R., & Pattabiraman, K. (2011). Efficient runtime detection and toleration of asymmetric races. IEEE Transactions on Computers, 61(4), 548-562.</a></li>
+                     <li><a href = "https://scholar.google.com/scholar_url?url=https://www.sciencedirect.com/science/article/pii/S0167819112000191&hl=en&sa=T&oi=gsb&ct=res&cd=0&d=18150343406961868445&ei=SJFTXqLxGY3KyQSo1bmYCQ&scisig=AAGBfm0JaoH6LZxXl0S_SFeoc8NN7l1Lsw">Nagpal, R., & Bhowmik, A. (2012). Criticality guided energy aware speculation for speculative multithreaded processors. Parallel Computing, 38(6-7), 329-341.</a></li>
+                     <li><a href = "https://scholar.google.com/scholar_url?url=https://drona.csa.iisc.ac.in/~srikant/papers-theses/JPDC.pdf&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=7966042552442373663&ei=XpFTXpKwOJntygS62aAw&scisig=AAGBfm1W7BaLxnV4BOQAT2LefIMAzdTOeA">Nagpal, R., & Srikant, Y. N. (2012). Compiler-assisted energy optimization for clustered VLIW processors. Journal of Parallel and Distributed Computing, 72(8), 944-959.</a></li>
+                  </ul>
+               </section>
+               <section id="conc">
+                  <h3>International Conferences and Workshops</h3>
+                  <ul style="text-align: justify;padding-right: 20px;">
+                     <li><a href = "https://scholar.google.com/scholar_url?url=http://eprints.iisc.ac.in/172/1/A_graph.pdf&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=11286126623412504734&ei=55NTXrm0J5KjywSFl4ywDQ&scisig=AAGBfm2FEYdinpf2n9RDAwXdhLT4g316Gw">Nagpal, R., & Srikant, Y. N. (2004, August). A graph matching based integrated scheduling framework for clustered VLIW processors. In Workshops on Mobile and Wireless Networking/High Performance Scientific, Engineering Computing/Network Design and Architecture/Optical Networks Control and Management/Ad Hoc and Sensor Networks/Compil (pp. 530-537). IEEE.</a></li>
+                     <li><a href = "https://scholar.google.com/scholar_url?url=https://dl.acm.org/doi/pdf/10.1145/977091.977155&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=10495587710557883676&ei=2JNTXvOcEoaE6rQPsP6vqAc&scisig=AAGBfm1xw4QRsWyoIJ587M9KMWzvLApzCw">Nagpal, R., & Srikant, Y. N. (2004, April). Integrated temporal and spatial scheduling for extended operand clustered VLIW processors. In Proceedings of the 1st conference on Computing frontiers (pp. 457-470).</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=http://citeseerx.ist.psu.edu/viewdoc/download%3Fdoi%3D10.1.1.106.1505%26rep%3Drep1%26type%3Dpdf&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=1569788273809173846&ei=xpNTXpiNHZC-yQTD0oGgDQ&scisig=AAGBfm07yUd-XF4Ax2qxRpC4Golz8pJCYg">Nagpal, R., & Bhowmik, A. (2005, December). Criticality driven energy aware speculation for speculative multithreaded processors. In International Conference on High-Performance Computing (pp. 19-28). Springer, Berlin, Heidelberg.</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://link.springer.com/chapter/10.1007/11573937_6&hl=en&sa=T&oi=gsb&ct=res&cd=0&d=8062242326005639490&ei=uJNTXt3LHYKiywT7v6f4Bg&scisig=AAGBfm0FSITyEPNFRlyyfMvMGAugQchYqQ">Nagpal, R., & Bhowmik, A. (2005, October). Criticality based speculation control for speculative multithreaded architectures. In International Workshop on Advanced Parallel Processing Technologies (pp. 31-40). Springer, Berlin, Heidelberg.</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://www.researchgate.net/profile/Rahul_Nagpal/publication/226000295_Exploring_Energy-Performance_Trade-Offs_for_Heterogeneous_Interconnect_Clustered_VLIW_Processors/links/53db38ff0cf2e38c633983ac/Exploring-Energy-Performance-Trade-Offs-for-Heterogeneous-Interconnect-Clustered-VLIW-Processors.pdf&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=11931806129292112515&ei=qpNTXqffAo3KyQSo1bmYCQ&scisig=AAGBfm2TgcJn8RvuOCjUqnYxPtC_nORtSg">Nagpal, R., & Srikant, Y. N. (2006, December). Exploring energy-performance trade-offs for heterogeneous interconnect clustered vliw processors. In International Conference on High-Performance Computing (pp. 497-508). Springer, Berlin, Heidelberg.</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://dl.acm.org/doi/pdf/10.1145/1176887.1176921&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=15685487754672553720&ei=jZNTXqrTGIyQygSTrYewDw&scisig=AAGBfm3NaDKHvW7lJQqxOTMug5e1AncUiw">Nagpal, R., & Srikant, Y. N. (2006, October). Compiler-assisted leakage energy optimization for clustered VLIW architectures. In Proceedings of the 6th ACM & IEEE International conference on Embedded software (pp. 233-241).</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://ieeexplore.ieee.org/abstract/document/4384054/&hl=en&sa=T&oi=gsb&ct=res&cd=0&d=810645448316455656&ei=nJNTXrLAOd30ygTijI-YAw&scisig=AAGBfm13-owOUgBNl2aSkvS89yXDK1xEYw">Nagpal, R., & Srikant, Y. N. (2007, October). Register file energy optimization for snooping based clustered VLIW architectures. In 19th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD'07) (pp. 161-168). IEEE.</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://link.springer.com/chapter/10.1007/978-3-540-77220-0_38&hl=en&sa=T&oi=gsb&ct=res&cd=0&d=11406807993471124218&ei=eZNTXpWkKJSiygSWu7nwAw&scisig=AAGBfm3E3W6e1aQXYEL256pbE3BZ2D0AiA">Nagpal, R., & Srikant, Y. N. (2007, December). Compiler-assisted instruction decoder energy optimization for clustered VLIW architectures. In International Conference on High-Performance Computing (pp. 405-417). Springer, Berlin, Heidelberg.</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://dl.acm.org/doi/pdf/10.1145/1289881.1289923&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=7059526289049563135&ei=aZNTXv2bD5ntygS62aAw&scisig=AAGBfm3v7VfHSrAxcCFSkLEO8DchPEeLaw">Nagpal, R., Madan, A., Bhardwaj, A., & Srikant, Y. N. (2007, September). Intacte: an interconnect area, delay, and energy estimation tool for microarchitectural explorations. In Proceedings of the 2007 international conference on Compilers, architecture, and synthesis for embedded systems (pp. 238-247).</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://dl.acm.org/doi/pdf/10.1145/1366230.1366267&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=15258163621703617917&ei=PZNTXpDnBZKjywSFl4ywDQ&scisig=AAGBfm30ro9TJRneVDAJEHZ3J7DsyQNAPw">Rangasamy, A., Nagpal, R., & Srikant, Y. N. (2008, May). Compiler-directed frequency and voltage scaling for a multiple clock domain microarchitecture. In Proceedings of the 5th Conference on Computing Frontiers (pp. 209-218).</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://dl.acm.org/doi/pdf/10.1145/1594835.1504202&hl=en&sa=T&oi=gsb-gga&ct=res&cd=0&d=1887008379513219400&ei=LZNTXtS6FpC-yQTD0oGgDQ&scisig=AAGBfm29cqgVY9RAiUGKpR4q0QvkU9KUVQ">Ratanaworabhan, P., Burtscher, M., Kirovski, D., Zorn, B., Nagpal, R., & Pattabiraman, K. (2009). Detecting and tolerating asymmetric races. ACM sigplan notices, 44(4), 173-184.</a></li>
+                     <li> <a href = "https://scholar.google.com/scholar_url?url=https://ieeexplore.ieee.org/abstract/document/5470906/&hl=en&sa=T&oi=gsb&ct=res&cd=0&d=2435632765493532380&ei=G5NTXt_lNIaE6rQPsP6vqAc&scisig=AAGBfm071suMa99dyVMeoa1oKfAdUQCYcg">Bahuleyan, J., Nagpal, R., & Srikant, Y. N. (2010, April). Integrated energy-aware cyclic and acyclic scheduling for clustered VLIW processors. In 2010 IEEE International Symposium on Parallel & Distributed Processing, Workshops and Phd Forum (IPDPSW) (pp. 1-8). IEEE.</a></li>                       
+                     
+                  </ul>	
+               </section>
+               <!-- <section id="w/p">
+                  <div class="page-header">
+                     <h3>Workshop/Poster</h3>
+                  </div>
+               </section> -->
+            </div>
+         </section>
+      </div>
+
+   </div>
+</div>
+</div>
+
+<div class="container-fluid footer">
+   <div class="container footerMain">
+      <div class="address1">
+         <h3>Main campus lab Address</h3>
+
+         <b>Parallel Systems Research Laboratory (PSRL)</b><br>
+         <b>Room No. 1108, 11th Floor, B Block</b><br>
+
+         <b>100 Feet Ring Road, BSK III Stage</b><br>
+         <b>Bangalore-560085, Karnataka</b><br>
+         <b>India</b><br>
+      </div>
+      <div class="address1">
+         <h3>Office Address </h3>
+         <b>Office No. 02S4, 2nd Floor, B Block</b><br>
+         <b>Department of CSE</b><br>
+         <b>100 Feet Ring Road, BSK III Stage</b><br>
+         <b>Bangalore-560085, Karnataka</b><br>
+         <b>India</b><br>
+      </div>
+
+   </div>
+</div>
+
+</div>
+
+
+
+
+ <script src="js/jquery-1.9.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script>
+   $(document).ready(function() {
+     $(document.body).scrollspy({
+       target: "#navparent"
+    });
+  });
+
+</script>
+</body>
+</html>
