@@ -288,9 +288,9 @@ Responsive
         justify-content: space-around;
     }
 
-    .carousel-item {
+/*     .carousel-item {
         height: 30vh;
-    }
+    } */
 
     .mainLeft {
         width: 100%;
